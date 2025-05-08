@@ -371,6 +371,11 @@ address {
     margin-left: auto;
     margin-right: auto;
 }
+@media (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-officexx.jpg);
+    }
+}
 .title {
     color: #ffffff;
     text-align: center;
@@ -403,17 +408,17 @@ address {
     background-color: #404bbf;
 }
 
-@media (min-resolution: 192dpi) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office2.jpg);
-    }
-}
 @media screen and (min-width: 768px) {
    .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office2.jpg);
     max-width: 768px;
     padding: 112px 0;
     }  
+        @media (min-resolution: 192dpi) {
+            .hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office2xx.jpg);
+            }
+        }
     .title {
     font-size: 56px;
     line-height: 1.07;
@@ -428,6 +433,11 @@ address {
         max-width: 1440px;
         padding: 188px 0;
     }
+        @media (min-resolution: 192dpi) {
+            .hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office3xx.jpg);
+            }
+        }
     .title {
         margin: 0 auto 48px;
     }
@@ -748,6 +758,7 @@ address {
 .div-logo-footer {
     display: flex;
     flex-direction: column;
+    margin-bottom: 72px;
 }
 .logo-web-studio {
     font-family: "Raleway", sans-serif;
@@ -762,7 +773,6 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 288px;
-    margin-bottom: 72px;
 }
 .logo-footer {
     text-align: center;
@@ -864,6 +874,10 @@ address {
     fill: #fff;
     margin-left: 16px;
 }
+.btn-footer:hover,
+.btn-footer:focus {
+    background-color: #404bbf;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -906,7 +920,7 @@ address {
     padding: 100px 0;
 }
 .div-logo-footer {
-    margin-right: 120px;
+    margin: 0 120px 0 0;
 }
 .container-div-footer {
     width: auto;
